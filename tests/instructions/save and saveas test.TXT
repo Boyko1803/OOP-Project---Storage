@@ -1,0 +1,45 @@
+save
+saveas ..\tests\result files\saved.txt
+
+/// Програмата ще изведе, че трябва първо да бъде отворен файл преди да може да бъде запаметен
+
+open ..\tests\original files\normal.txt
+
+save 12 56
+save dkafhnrouw rwlkjfro
+saveas
+saveas nonExistingFolder\saved.txt
+saveas ..\nonExistingFolder\saved.txt
+
+\\\ Всичките тези опити за запаметяване са невалидни и програмата ще изведе подходящи съобщения
+
+add
+bread
+producerName
+no comment
+2020-11-15
+kg
+4
+11
+
+saveas ..\tests\result files\saved.txt
+
+\\\ Програмата успешно ще запамети копие на файла като копира съдържанието на normal_history.txt в saved_history.txt
+\\\ Също в saved_history.txt ще бъдат записани промените от началото на изпълнението на програмата
+
+close
+open ..\tests\result files\saved.txt
+add 
+banana
+producer2
+not bad
+2020-07-13
+kg
+3
+12
+save
+
+\\\ Новите промени ще бъдат запазени и информацията за тях ще се запие в save_history.txt
+
+close
+exit

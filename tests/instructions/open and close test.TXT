@@ -1,0 +1,37 @@
+close
+
+/// Програмата ще изведе, че трябва първо да бъде отворен някой файл, преди да може да бъде затворен.
+
+open
+open randomTextFile.txt
+open 12345678
+open 87 56 32
+open sdfjh dshf eunvfdms uoedf
+open         34     fsg       sry     23     wer  21
+open ..\tests\original files
+open ..\tests\original files\randomName.txt
+open ..\tests\original files\empty.pdf
+open ..\tests\original files\missingHistory.txt
+
+/// Всеки от тези опити подава невалиден адрес и програмата ще изведе съобщение, че файлът не може да бъде отворен
+
+open ..\tests\original files\empty.txt
+
+/// Успешно отваря файла empty.txt
+
+open ..\tests\original files\empty2.txt
+
+/// Програмата ще изведе, че трябва вече отвореният файл първо да бъде затворен преди да може да се отвори нов
+
+close file
+close abcdef
+close djfh ljdfhewi cxjfljndfsf
+close 124  8775  23576
+
+/// Всеки от тези опити за затваряне на файла е невалиден и програмата ще изведе съобщение, че "close" не приема параметри
+
+close
+
+/// Програмата успешно ще затвори файла.
+
+exit

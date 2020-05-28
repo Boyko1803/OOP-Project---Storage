@@ -1,0 +1,28 @@
+create
+create 4 3 5
+create dksjghewirt fklgnrwui gvwrelgtj
+create ..\tests\result files\create.txt
+create 8 8 ..\tests\result files\create.txt
+create 15 2 7 9 ..\tests\result files\create.txt
+create 4 -7 9 ..\tests\result files\create.txt
+create 15 7.8 64 ..\tests\result files\create.txt
+create 10 10 10 nonExistingFolder\fjgnfjgnfjognfdbg
+create 10 23 45 ..\nonExistingFolder\create.txt
+create 0 73 13 ..\tests\result files\create.txt
+create 10 0 20 ..\tests\result files\create.txt
+create 9 32 0 ..\tests\result files\create.txt
+
+/// Всеки от тези опити за създаване на фай е невалиден и програмата ще изведе подходящи съобщения
+
+open ..\tests\original files\empty.txt
+create 20 20 20 ..\tests\result files\create.txt
+close
+
+/// Програмата ще изведе, че не може да бъде създаден нов файл, докато старият не бъде затворен
+
+create 30 15 25 ..\tests\result files\create.txt
+
+/// Програмата успешно ще създаде и отвори нов файл с 30 секции, 15 рафта на секция и 25 места на рафт на дадената локация
+
+close
+exit
